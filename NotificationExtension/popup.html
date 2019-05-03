@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="libs/crypto-js/rollups/hmac-sha256.js"></script>
+    <script src="libs/crypto-js/components/enc-base64-min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <label>
+            SenderId
+            <input id="senderId">
+        </label>
+        
+        <input type="button" id="registerWithGCM" value="Register" />
+        <label>
+            HubName
+            <input id="hubName">
+        </label>
+        <br>
+        <label>
+            ConnectionString
+            <input id="connectionString">
+        </label>
+        <input type="button" id="registerWithNH" value="Connect">
+        <textarea id="console" readonly></textarea>
+        <input type="button" id="saveData" value="Save Connection">
+        <input type="button" id="clearLogs" value="Clear Logs">
+    </div>
+    <script src='index.js'></script>
+</body>
+</html>
